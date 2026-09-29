@@ -1,0 +1,33 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>PIXEL HORDE</title>
+  </head>
+  <body>
+    <canvas id="game"></canvas>
+    <div id="vignette"></div><div id="damage-flash"></div>
+    <section id="start-screen">
+      <div class="logo">PIXEL <b>HORDE</b></div>
+      <div class="tagline">OPEN WORLD · CO-OP · ABSURD FIREPOWER</div>
+      <button id="play">CLICK TO PLAY</button>
+      <div class="controls">WASD 移动　SHIFT 冲刺　SPACE 跳跃　鼠标射击　1—5 换枪　R 换弹</div>
+    </section>
+    <div id="hud" class="hidden">
+      <div id="event-banner"><small>⚠ WORLD EVENT</small><strong>TITAN HAS SPAWNED</strong></div>
+      <div id="boss"><label>TITAN <i id="boss-distance"></i></label><div><span id="boss-fill"></span></div></div>
+      <div id="stats"><span>KILLS <b id="kills">0</b></span><span>COMBO <b id="combo">0</b></span></div>
+      <div id="online">ONLINE <b>1</b><small id="connection">CONNECTING</small></div>
+      <div id="perf">FPS -- · DRAW -- · Q --</div>
+      <div id="crosshair"><i></i><i></i><i></i><i></i></div>
+      <div id="hitmarker">×</div>
+      <div id="streak"></div>
+      <div id="health"><small>HP</small><div><span></span></div><b>100</b></div>
+      <div id="weapon"><small>1 · WEAPON</small><strong>AK-47 // IRON FANG</strong><div><b>30</b> / <span>∞</span></div><em></em></div>
+      <div id="damage-numbers"></div>
+      <div id="minimap"><canvas id="minimap-canvas" width="360" height="360"></canvas><span>N</span><b id="map-count">0 HOSTILES · 120m</b></div>
+    </div>
+    <script type="module" src="/src/main.ts"></script>
+  </body>
+</html>
